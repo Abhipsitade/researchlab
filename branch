@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandyra Lab - Protein & RNA Structural Biology</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        header {
+            background-image: url('header-background.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        header h1 {
+            font-size: 3rem;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        nav {
+            background-color: #007bff;
+            padding: 0.5rem 1rem;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        section h2 {
+            color: #007bff;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .team, .jobs, .research, .gallery, .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .team img, .gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 0.75rem;
+        }
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bandyra Lab</h1>
+        <p>Exploring Protein & RNA Structures for Innovative Discoveries</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="container">
+        <h2>Welcome to Bandyra Lab</h2>
+        <p>Our lab is dedicated to uncovering the structural intricacies of proteins and RNA. We aim to make impactful contributions to the scientific community and foster innovative research.</p>
+    </section>
+
+    <section id="team" class="container team">
+        <h2>Meet the Team</h2>
+        <p>Our diverse team combines expertise in structural biology, biochemistry, and molecular biology to push the boundaries of science.</p>
+        <img src="team-photo.jpg" alt="Team Photo">
+    </section>
+
+    <section id="jobs" class="container jobs">
+        <h2>Join Our Lab</h2>
+        <p>We are always looking for talented individuals to join our team. Explore our current opportunities and become part of our groundbreaking research.</p>
+        <a href="jobs.html">View Job Openings</a>
+    </section>
+
+    <section id="research" class="container research">
+        <h2>Our Research</h2>
+        <p>We focus on understanding the molecular architecture and dynamics of proteins and RNA, employing advanced techniques to address key biological questions.</p>
+    </section>
+
+    <section id="gallery" class="container gallery">
+        <h2>Gallery</h2>
+        <p>Take a glimpse into our lab’s journey through these moments captured during research, conferences, and collaborations.</p>
+        <img src="lab1.jpg" alt="Lab Work">
+        <img src="lab2.jpg" alt="Conference">
+    </section>
+
+    <section id="contact" class="container contact">
+        <h2>Contact Us</h2>
+        <p>We welcome collaborations and inquiries. Reach out to us through the form below.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bandyra Lab. All rights reserved.</p>
+    </footer>
+</body>
+</html>
